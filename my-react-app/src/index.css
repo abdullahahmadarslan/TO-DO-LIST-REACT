@@ -1,0 +1,127 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* creating global variables */
+:root {
+  --bodyColor: #6983aa;
+  --appDivColor: white;
+  --headingColor: #8566aa;
+}
+
+/* body */
+body {
+  background-color: var(--bodyColor);
+}
+
+/* app div */
+.app-div {
+  border: 2px solid var(--bodyColor);
+  width: 35%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 20px;
+  background-color: var(--appDivColor);
+}
+
+/* heading */
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Tektur', cursive;
+}
+
+.heading {
+  background-color: var(--headingColor);
+  margin-top: 29px;
+  height: 69px;
+}
+
+/* todo list */
+.todo-list {
+  margin-top: 39px;
+  height: 83%;
+}
+
+/*input-plus-addbtn  */
+.input-plus-addbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* add button */
+.input-plus-addbtn button {
+  border-radius: 47px;
+  width: 49px;
+  height: 44px;
+  background-color: var(--headingColor);
+  border: none;
+}
+
+.input-plus-addbtn button:hover {
+  background-color: rgb(47, 255, 82);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* search bar and button fixing */
+.input-plus-addbtn button,
+.cmn {
+  margin: 0px 6px;
+
+}
+
+/* search-bar */
+.search-bar {
+  width: 19rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-bottom: 4px solid var(--headingColor);
+  margin-left: 3rem;
+  font-size: 27px;
+  padding: 27px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* delete btn */
+.del-btn {
+  border-radius: 47px;
+  width: 36px;
+  height: 36px;
+  background-color: var(--headingColor);
+  border: none;
+}
+
+.del-btn:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.list-item-div {
+  display: flex;
+  margin: 8px 0px;
+
+}
+
+.list-item {
+  list-style: none;
+  width: 80%;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Tektur', cursive;
+
+}
+
+.cmn2 {
+  margin: 0px 4px;
+}
